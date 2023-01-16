@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Carousel, Container, Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import girl_squat from "../utils/girl_squat.jpg";
 import girl_deadlift from "../utils/girl_deadlift.jpg";
 import guy_lifting from "../utils/guy_lifting.webp";
@@ -45,7 +46,9 @@ const CarouselImg = () => {
             <Card.Text>
               Click on the button below and improve your gains
             </Card.Text>
-            <Button variant="primary">Lets go!</Button>
+            <Link to="/journal">
+              <Button variant="primary">Lets go!</Button>
+            </Link>
           </Card.Body>
         </Card>
       </Container>
