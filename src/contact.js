@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "./components/form/formPage";
+import Form from "./components/forms/formPage";
 import { Container, Row, Col } from "react-bootstrap";
 import ShakeImg from "./utils/pngfind.com-handshake-png-994473.png";
 function contact() {

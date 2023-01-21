@@ -3,11 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import "./style/style.css";
-import Carousel from "./components/carousel";
 import Home from "./home";
 import Journal from "./journal";
 import About from "./about";
 import Contact from "./contact";
+import Workouts from "./workouts";
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
         <Route path="/journal" element={<Journal />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/journal/workouts" element={<Workouts />} />
       </Routes>
       <Footer />
     </BrowserRouter>

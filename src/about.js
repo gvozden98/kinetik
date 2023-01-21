@@ -3,7 +3,7 @@ import AboutCard from "./components/aboutCard";
 import { Container, CardGroup } from "react-bootstrap";
 import logo from "./utils/kineti_logo.png";
 
-let aboutTextLong = `Welcome to our website! We are dedicated to helping individuals like you track and improve their workouts. Our mission is to provide a comprehensive and user-friendly platform that allows users to easily document their exercise routine and monitor their progress over time.
+let aboutTextLong = `We are dedicated to helping individuals like you track and improve their workouts. Our mission is to provide a comprehensive and user-friendly platform that allows users to easily document their exercise routine and monitor their progress over time.
 
 Our website features a wide range of tools and resources to help you achieve your fitness goals, including a customizable workout journal, a detailed exercise database, and progress tracking charts. We also offer a community feature where users can share their progress, get feedback and connect with other fitness enthusiasts.
 
