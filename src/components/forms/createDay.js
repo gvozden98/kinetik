@@ -9,21 +9,18 @@ function CreateDay() {
   let [workoutComment, setWorkoutComment] = useState();
   let handleSubmit = (event) => {
     navigate("/journal/workouts", {
-      state: { workoutName, workoutDate, workoutComment },
+      state: [workoutName, workoutDate, workoutComment],
     });
   };
 
   let handleWorkoutNameChange = (e) => {
     setWorkoutName(e.target.value);
-    console.log(e.target.value);
   };
   let handleWorkoutDateChange = (e) => {
     setWorkoutDate(e.target.value);
-    console.log(e.target.value);
   };
   let handleWorkoutComment = (e) => {
     setWorkoutComment(e.target.value);
-    console.log(e.target.value);
   };
   return (
     <Form method="post" action="/journal">

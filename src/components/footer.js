@@ -10,7 +10,7 @@ const Footer = () => {
           <Nav.Link style={{ color: "#656568" }}>Privacy</Nav.Link>
           <Nav.Link style={{ color: "#656568" }}>Contact</Nav.Link>
         </Nav>
-        <Navbar.Text style={{ color: "#385f6e" }}>Copyright 2021</Navbar.Text>
+        <Navbar.Text style={{ color: "#385f6e" }}>Copyright 2023</Navbar.Text>
       </Navbar.Collapse>
     </Navbar>
   );
