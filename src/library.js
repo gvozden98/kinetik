@@ -2,12 +2,14 @@ import React from "react";
 import "./style/style.css";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
-import DataFetcher from "./dataFetcher";
+import Exercise from "./exercise";
 const Library = () => {
   const [exerciseList, setExerciseList] = useState([]);
+  const [search, setSearch] = useState("");
+  const [err, setErr] = useState(""); //nisi ovo iskoristio jos uvek
+
   const fetchExercises = async () => {
-    const url =
-      "https://exercisedb.p.rapidapi.com/exercises/bodyPart/shoulders";
+    const url = `https://exercisedb.p.rapidapi.com/exercises/name/${search}`;
     const options = {
       method: "GET",
       headers: {
@@ -19,36 +21,46 @@ const Library = () => {
 
     try {
       const response = await fetch(url, options);
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
       const result = await response.json();
       setExerciseList(result);
-      console.log(exerciseList);
-    } catch (error) {
-      console.error(error);
+    } catch (err) {
+      console.error(err);
     }
   };
 
   return (
     <Container className="mt-2">
       <Row>
-        <Col xs={1} md={4}></Col>
-        <Col xs={4} md={4}>
+        <Col sm={true}></Col>
+        <Col sm={true}>
           <Form>
             <Form.Group controlId="exampleForm.ControlInput1">
               <Form.Label style={{ fontSize: "35px" }}>
                 Find an exercise
               </Form.Label>
-              <Form.Control type="text" placeholder="Enter text" />
+              <Form.Control
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                type="text"
+                placeholder="Biceps, squat..."
+              />
+              {console.log(exerciseList)}
               <Button
                 variant="outline-primary"
                 className="mx-auto d-block"
-                style={{ marginTop: "10px" }}
+                style={{ marginTop: "10px", marginBottom: "10px" }}
                 onClick={fetchExercises}>
                 Search
               </Button>
             </Form.Group>
           </Form>
         </Col>
+        <Col sm={true}></Col>
       </Row>
+      <Exercise exerciseList={exerciseList}></Exercise>
     </Container>
   );
 };

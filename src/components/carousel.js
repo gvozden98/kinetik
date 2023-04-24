@@ -13,10 +13,11 @@ const CarouselImg = () => {
         <Carousel.Item interval={5000}>
           <img className="d-block w-100" src={girl_squat} alt="First slide" />
           <Carousel.Caption>
-            <h3>Track your workouts</h3>
+            <h3>Find the best exercise</h3>
             <p>
-              Tracking workouts is an effective way to monitor progress and
-              measure improvements in strength, endurance, and overall fitness
+              Finding the best exercises for weightlifting is important because
+              it can help you achieve your fitness goals more efficiently and
+              effectively.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -27,7 +28,7 @@ const CarouselImg = () => {
             alt="Second slide"
           />
           <Carousel.Caption>
-            <h3>Monitor your progress</h3>
+            <h3>Be consistent</h3>
             <p>Identify areas of weakness that need more attention</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -42,7 +43,7 @@ const CarouselImg = () => {
       <Container>
         <Card className="text-center mt-3 pt-6 mb-5 pb-6">
           <Card.Body>
-            <Card.Title>Start journaling today!</Card.Title>
+            <Card.Title>Start lifting today!</Card.Title>
             <Card.Text>
               Click on the button below and improve your gains
             </Card.Text>

@@ -3,16 +3,16 @@ import AboutCard from "./components/aboutCard";
 import { Container, CardGroup } from "react-bootstrap";
 import logo from "./utils/kineti_logo.png";
 
-let aboutTextLong = `We are dedicated to helping individuals like you track and improve their workouts. Our mission is to provide a comprehensive and user-friendly platform that allows users to easily document their exercise routine and monitor their progress over time.
+let aboutTextLong = `Welcome to our website, the ultimate destination for weightlifters of all levels! Our website is dedicated to providing you with an extensive library of exercises for weightlifting that you can use to build strength, increase muscle mass, and achieve your fitness goals.
 
-Our website features a wide range of tools and resources to help you achieve your fitness goals, including a customizable workout journal, a detailed exercise database, and progress tracking charts. We also offer a community feature where users can share their progress, get feedback and connect with other fitness enthusiasts.
+Whether you are a beginner or an experienced weightlifter, our library of exercises has something for everyone. We have carefully curated a collection of exercises that are designed to target specific muscle groups, from the chest and arms to the back and legs. With our comprehensive database of exercises, you can easily create customized workout plans that are tailored to your fitness level and goals.
 
-We believe that tracking your workouts is a powerful way to take control of your fitness journey and make real progress. Whether you're a beginner just starting out or a seasoned athlete looking to take your training to the next level, our website is the perfect tool for you.
+At our website, we are committed to providing you with accurate and up-to-date information about each exercise. Our exercise database includes detailed descriptions, images, and even instructional videos to ensure that you perform each exercise correctly and safely.
 
-Our team is made up of fitness enthusiasts and experts who are passionate about helping people achieve their fitness goals. We are constantly working to improve our platform and add new features to make tracking your workouts as easy and effective as possible.
+Our website is designed to be user-friendly and easy to navigate, with intuitive search functions that make it simple to find the exercises you need. We also offer a variety of tools and resources to help you stay motivated and on track, including workout logs and progress tracking tools.
 
-Thank you for choosing our website and we hope you find it helpful in your fitness journey.`;
-let aboutTextShort = `Welcome to our website! We provide a user-friendly platform to easily document and monitor workout progress. Our tools include a customizable journal, exercise database and progress tracking charts. Join our community to share progress, get feedback, and connect with other fitness enthusiasts. Our team of fitness experts are dedicated to helping you achieve your goals. Thank you for choosing our website.`;
+We are passionate about weightlifting and believe that everyone can benefit from incorporating strength training into their fitness routine. Whether you are looking to build muscle, lose weight, or simply improve your overall health, our website has everything you need to achieve your goals. Thank you for visiting our website, and we look forward to helping you on your weightlifting journey!`;
+let aboutTextShort = `Our website is a comprehensive library of weightlifting exercises, with detailed instructions and illustrations to help you perform each exercise correctly and safely. Whether you're a beginner or a seasoned weightlifter, our library has something for everyone. Start exploring our collection today and take your weightlifting game to the next level!`;
 
 function about() {
   return (
