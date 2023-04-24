@@ -5,7 +5,8 @@ const DataFetcher = () => {
 
   useEffect(() => {
     const fetchExercises = async () => {
-      const url = "https://exercisedb.p.rapidapi.com/exercises/bodyPartList";
+      const url =
+        "https://exercisedb.p.rapidapi.com/exercises/bodyPart/shoulders";
       const options = {
         method: "GET",
         headers: {
@@ -20,6 +21,7 @@ const DataFetcher = () => {
         const response = await fetch(url, options);
         const result = await response.json();
         setExerciseList(result);
+        console.log(exerciseList);
       } catch (error) {
         console.error(error);
       }
@@ -32,9 +34,9 @@ const DataFetcher = () => {
     <div>
       <h1>List of Exercises</h1>
       <ul>
-        {exerciseList.map((exercise) => (
+        {/* {exerciseList.map((exercise) => (
           <li key={exercise.id}>{exercise.name}</li>
-        ))}
+        ))} */}
       </ul>
     </div>
   );
