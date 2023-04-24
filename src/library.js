@@ -38,10 +38,11 @@ const Library = () => {
         <Col sm={true}>
           <Form>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Label style={{ fontSize: "35px" }}>
+              <Form.Label className={"font-link"} style={{ fontSize: "35px" }}>
                 Find an exercise
               </Form.Label>
               <Form.Control
+                className={"font-link"}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 type="text"
@@ -50,7 +51,7 @@ const Library = () => {
               {console.log(exerciseList)}
               <Button
                 variant="outline-primary"
-                className="mx-auto d-block"
+                className="mx-auto d-block font-link"
                 style={{ marginTop: "10px", marginBottom: "10px" }}
                 onClick={fetchExercises}>
                 Search

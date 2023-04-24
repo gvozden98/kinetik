@@ -13,8 +13,13 @@ const ImgLogo = styled.img`
 const Header = () => {
   return (
     <>
-      <Navbar style={{ backgroundColor: "#f0f0f0" }} expand="lg">
-        <ImgLogo src={logo} alt="logo" />
+      <Navbar
+        className={"font-link"}
+        style={{ backgroundColor: "#f0f0f0" }}
+        expand="lg">
+        <Link to="/library">
+          <ImgLogo src={logo} alt="logo" />
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">

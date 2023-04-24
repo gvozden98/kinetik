@@ -8,7 +8,9 @@ import guy_lifting from "../utils/guy_lifting.webp";
 
 const CarouselImg = () => {
   return (
-    <Container style={{ marginBottom: "5", paddingBottom: "5" }}>
+    <Container
+      className={"font-link"}
+      style={{ marginBottom: "5", paddingBottom: "5" }}>
       <Carousel>
         <Carousel.Item interval={5000}>
           <img className="d-block w-100" src={girl_squat} alt="First slide" />
@@ -47,7 +49,7 @@ const CarouselImg = () => {
             <Card.Text>
               Click on the button below and improve your gains
             </Card.Text>
-            <Link to="/journal">
+            <Link to="/library">
               <Button variant="primary">Lets go!</Button>
             </Link>
           </Card.Body>

@@ -6,3 +6,7 @@ body{
 a{
     all:unset;
 }
+.font-link {
+    font-family: 'Zen Dots', cursive;
+
+  }
