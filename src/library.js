@@ -5,7 +5,7 @@ const Library = () => {
   return (
     <Container className="mt-2">
       <Row>
-        <Col sm></Col>
+        <Col sm>Library</Col>
         <Col sm></Col>
       </Row>
     </Container>
