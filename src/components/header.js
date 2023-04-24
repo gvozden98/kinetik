@@ -25,7 +25,7 @@ const Header = () => {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link>
-                <Link to="/library">Journal</Link>
+                <Link to="/library">Library</Link>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
