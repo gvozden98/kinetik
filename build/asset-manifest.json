@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c73c8b7b.css",
+    "main.js": "/static/js/main.f03e3981.js",
+    "static/media/girl_squat.jpg": "/static/media/girl_squat.a77b91b647a243b3a781.jpg",
+    "static/media/girl_deadlift.jpg": "/static/media/girl_deadlift.8386ed0e3602333999de.jpg",
+    "static/media/guy_lifting.webp": "/static/media/guy_lifting.8c25c12c896c19bd0912.webp",
+    "static/media/pngfind.com-handshake-png-994473.png": "/static/media/pngfind.com-handshake-png-994473.41dd9976851280c6e3aa.png",
+    "static/media/kineti_logo.png": "/static/media/kineti_logo.eef7b50e5cc8fd221695.png",
+    "index.html": "/index.html",
+    "main.c73c8b7b.css.map": "/static/css/main.c73c8b7b.css.map",
+    "main.f03e3981.js.map": "/static/js/main.f03e3981.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c73c8b7b.css",
+    "static/js/main.f03e3981.js"
+  ]
+}
