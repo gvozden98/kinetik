@@ -4,7 +4,7 @@ import { Card, Row, Col, Alert } from "react-bootstrap";
 export default function Exercise(props) {
   if (props.exerciseList?.length === 0) {
     return (
-      <Alert variant="danger" dismissible>
+      <Alert variant="danger">
         <Alert.Heading>Input invalid</Alert.Heading>
       </Alert>
     );
