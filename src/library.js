@@ -3,10 +3,10 @@ import "./style/style.css";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useState } from "react";
 import Exercise from "./components/exercise";
+const key = `${process.env.REACT_APP_API_KEY}`;
 const Library = () => {
   const [exerciseList, setExerciseList] = useState();
   const [search, setSearch] = useState("");
-
   const fetchExercises = async () => {
     if (search === "" || search === null || search === undefined) {
       return;
@@ -17,7 +17,7 @@ const Library = () => {
       method: "GET",
       headers: {
         "content-type": "application/octet-stream",
-        "X-RapidAPI-Key": "728f36ea92msh477e8966317888bp1e397ejsnb8a8464a87c7",
+        "X-RapidAPI-Key": key,
         "X-RapidAPI-Host": "exercisedb.p.rapidapi.com",
       },
     };
@@ -28,8 +28,7 @@ const Library = () => {
         throw new Error(`Error! status: ${response.status}`);
       }
       const result = await response.json();
-        setExerciseList(result);
-
+      setExerciseList(result);
     } catch (err) {
       console.log("There was an error", err);
     }
