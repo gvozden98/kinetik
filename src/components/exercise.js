@@ -14,7 +14,7 @@ export default function Exercise(props) {
     //pomeraj na svaki treci element
     listItems.push(
       //ubaci u niz
-      <Row>
+      <Row key={i}>
         {props.exerciseList.slice(i, i + 3).map(
           (
             exercise //dodaj red pa uzmi 3 elementa
