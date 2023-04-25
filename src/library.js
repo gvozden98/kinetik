@@ -1,15 +1,18 @@
 import React from "react";
 import "./style/style.css";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
-import { useState, useEffect } from "react";
-import Exercise from "./exercise";
+import { useState } from "react";
+import Exercise from "./components/exercise";
 const Library = () => {
-  const [exerciseList, setExerciseList] = useState([]);
+  const [exerciseList, setExerciseList] = useState();
   const [search, setSearch] = useState("");
-  const [err, setErr] = useState(""); //nisi ovo iskoristio jos uvek
 
   const fetchExercises = async () => {
-    const url = `https://exercisedb.p.rapidapi.com/exercises/name/${search}`;
+    if (search === "" || search === null || search === undefined) {
+      return;
+    }
+
+    const url = `https://exercisedb.p.rapidapi.com/exercises/name/${search.toLowerCase()}`;
     const options = {
       method: "GET",
       headers: {
@@ -25,9 +28,10 @@ const Library = () => {
         throw new Error(`Error! status: ${response.status}`);
       }
       const result = await response.json();
-      setExerciseList(result);
+        setExerciseList(result);
+
     } catch (err) {
-      console.error(err);
+      console.log("There was an error", err);
     }
   };
 
@@ -48,7 +52,6 @@ const Library = () => {
                 type="text"
                 placeholder="Biceps, squat..."
               />
-              {console.log(exerciseList)}
               <Button
                 variant="outline-primary"
                 className="mx-auto d-block font-link"

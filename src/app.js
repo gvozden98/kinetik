@@ -12,8 +12,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-      {/* NE ZABORAVI DA PROMENIS LINKOVE U HEADERU U LINK KOMPONENTE */}
-      {/* Menja se samo ono sto je u routes delu, ostalo ostaje na ekranu */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/library" element={<Library />} />
